@@ -1,0 +1,265 @@
+<app-header></app-header>
+
+
+<!-- video banner -->
+<section id="video-banner">
+  <video playsinline [muted]="'muted'" loop autoplay [src]="videoSource"></video>
+
+  <div class="video-content clear-fix">
+    <div class="container">
+      <p>{{ 'videoBanner.title' | translate }}</p>
+      <h3>
+        {{ 'videoBanner.subtitle' | translate }}
+      </h3>
+    </div>
+    <a class="move-forward" href="#about">
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+    </a>
+  </div>
+</section>
+<!-- about -->
+
+<!-- show Desktop -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="text-center mb-4">{{'aboutContent.title' | translate}}</h2>
+
+        <p class="mb-3 text-center"  data-aos-offset="100" data-aos-easing="ease-in-sine">
+          {{"aboutContent.subtitle" | translate}}
+        </p>
+
+        <p class="mb-5 text-center" data-aos-offset="150" data-aos-easing="ease-in-sine">
+          {{'aboutContent.sub-subtitle' | translate }}
+        </p>
+
+        <!-- show Desktop -->
+        <ul class="about-desktop"  data-aos-offset="180" data-aos-easing="ease-in-sine">
+          <li>
+            <img src="./assets/images/list/ai.png" /> {{ 'aboutContent.listItems.ai' | translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/smart-city.png" />{{ 'aboutContent.listItems.smartCities' | translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/internet-of-things.png" />{{ 'aboutContent.listItems.iot' | translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/robotic-process-automation.png" />{{ 'aboutContent.listItems.rpa' | translate
+            }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Conversational-AI.png" />{{ 'aboutContent.listItems.conversationalAi' |
+            translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/blockchain.png" />{{ 'aboutContent.listItems.blockchain' | translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Metaverse.png" />{{ 'aboutContent.listItems.metaverse' | translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Cloud-computing.png" />{{ 'aboutContent.listItems.cloudComputing' | translate
+            }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Predictive-analytics.png" />{{ 'aboutContent.listItems.predictiveAnalytics' |
+            translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Computer-vision.png" />{{ 'aboutContent.listItems.computerVision' | translate
+            }}
+          </li>
+          <li>
+            <img src="./assets/images/list/big-data.png" />{{ 'aboutContent.listItems.bigData' | translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Digital-Banking.png" />{{ 'aboutContent.listItems.digitalBanking' | translate
+            }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Biotech-healthtech.png" />{{ 'aboutContent.listItems.healthTech' | translate
+            }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Sustainability-net-zero.png" />{{ 'aboutContent.listItems.sustainability' |
+            translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Clean-tech.png" />{{ 'aboutContent.listItems.cleanTech' | translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/renewables.png" />{{ 'aboutContent.listItems.renewables' | translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Cyber-security.png" />{{ 'aboutContent.listItems.cybersecurity' | translate
+            }}
+          </li>
+          <li><img src="./assets/images/list/Ed-tech.png" />{{'aboutContent.listItems.edTech' | translate }}</li>
+          <!-- <li><img src="./assets/images/list/Fit-tech.png" />{{'aboutContent.listItems.fitTech' | translate }}</li> -->
+        </ul>
+
+        <!-- show Mobile -->
+        <div class="pin-mobile about-mobile">
+          <div class="panel"  data-aos-offset="180" data-aos-easing="ease-in-sine">
+            <ul>
+              <li>
+                <img src="./assets/images/list/ai.png" />{{ 'showMobile.AI & Machine Learning' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/internet-of-things.png" />{{ 'showMobile.Internet of Things (IoT)' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/Conversational-AI.png" />{{ 'showMobile.Conversational AI/ DeepTech' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/Metaverse.png" />{{ 'showMobile.Metaverse, AR/VR' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/Predictive-analytics.png" />
+                {{ 'showMobile.Predictive Analytics' | translate }}
+              </li>
+            </ul>
+          </div>
+
+          <div class="panel"  data-aos-offset="200" data-aos-easing="ease-in-sine">
+            <ul>
+              <li>
+                <img src="./assets/images/list/big-data.png" />{{ 'showMobile.Big Data Analytics & Visualization' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/Biotech-healthtech.png" />{{ 'showMobile.BioTech / HealthTech' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/Clean-tech.png" />{{ 'showMobile.CleanTech / ClimateTech / GreenTech' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/Cyber-security.png" />{{ 'showMobile.Assurance/Cybersecurity' | translate }}
+              </li>
+              <li><img src="./assets/images/list/Fit-tech.png" />{{ 'showMobile.Fit Tech' | translate }}</li>
+            </ul>
+          </div>
+
+          <div class="panel"  data-aos-offset="220" data-aos-easing="ease-in-sine">
+            <ul>
+              <li>
+                <img src="./assets/images/list/smart-city.png" />{{ 'showMobile.Smart Cities' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/robotic-process-automation.png" />{{ 'showMobile.Robotic Process Automation (RPA)' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/blockchain.png" />{{ 'showMobile.Blockchain Development & Integration' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/Cloud-computing.png" />{{ 'showMobile.Cloud Computing' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/Computer-vision.png" />{{ 'showMobile.Computer Vision & Image Recognition' | translate }}
+              </li>
+            </ul>
+          </div>
+
+          <div class="panel"  data-aos-offset="240" data-aos-easing="ease-in-sine">
+            <ul>
+              <li>
+                <img src="./assets/images/list/Digital-Banking.png" />{{ 'showMobile.Digital Banking / FinTech' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/Sustainability-net-zero.png" />{{ 'showMobile.Sustainability / Net Zero' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/renewables.png" />{{ 'showMobile.Renewables / Wearables' | translate }}
+              </li>
+              <li><img src="./assets/images/list/Ed-tech.png" />{{ 'showMobile.EdTech' | translate }}</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="mt-5 text-center"  data-aos-offset="260" data-aos-easing="ease-in-sine">
+        {{ 'showMobile.para' | translate }}
+        </p>
+        <!--  -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- show mobile -->
+
+
+<section id="team">
+    <div 
+      class="team-container bg-{{i}}" 
+      *ngFor="let item of teamLimited; let i = index"
+      style="background-image: url({{item.bgImage}})"
+    >
+      <!-- <div class="fluid">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-lg-9 col-md-7">
+              <div class="team-description">
+                <p class="title">{{ item.title }}</p>
+  
+                <p [ngClass]="i > 1 ? 'd-none' : ''" *ngFor="let subitem of item.description; let i = index">
+                  {{ subitem.content }}
+                </p>
+  
+                <p class="mt-3 mb-3 author" [innerHTML]="item.author"></p>
+                 <div class="mt-5" *ngIf="item.description.length > 3">
+                  <button (click)="presentModal(item)" class="btn news-button"  >
+                    {{ translate.getDefaultLang() === 'ar' ? 'المزيد' : 'Learn More' }}
+                  </button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-5">
+              <img class="img-fluid co-founder" [src]="item.profile" />
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="fluid">
+        <div class="container-fluid ">
+          <div class="row align-items-center">
+            <div class="col-lg-9 col-md-7">
+              <div class="team-description">
+                <p class="title">{{ item.title }}</p>
+    
+                <p [ngClass]="i > 1 ? 'd-none' : ''" *ngFor="let subitem of item.description; let i = index">
+                  {{ subitem.content }}
+                </p>
+    
+                <p class="mt-3 mb-3 author" [innerHTML]="item.author"></p>
+    
+                <a *ngFor="let item of item.social" [href]="item.url" target="_blank">
+                  <img *ngIf="item.url !== ''" [src]="item.icon" /></a>
+                <div class="mt-5" *ngIf="item.description.length > 3">
+                  <button (click)="presentModal(item)" class="btn news-button"  >
+                    {{ translate.getDefaultLang() === 'ar' ? 'المزيد' : 'Learn More' }}
+                  </button>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-5">
+              <img class="img-fluid co-founder" [src]="item.profile" />
+            </div>
+          </div>
+        </div>
+       </div>
+    </div>
+  </section>
+
+
+
+  <div>
+    <app-footer></app-footer>
+
+  </div>
+

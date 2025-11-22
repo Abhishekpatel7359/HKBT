@@ -1,0 +1,28 @@
+<section id="news" class="common-padding">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 middle-align mb-3">
+                <div>
+                  <p class="title-description">{{ translate.getDefaultLang() === 'ar' ? 'أخبار' : 'News' }}</p>
+                </div>
+              </div>
+      
+              <div class="col-lg-12 mt-3">
+                <div class="carousel news" >
+                  <div class="carousel-cell" *ngFor="let item of news; let i = index">
+                    <div class="data-flickity">
+                    <img class="img-fluid news-image" [src]="item.image" />
+                    <div class="news-section mb-5">
+                      <h5 class="mt-4">{{ translate.getDefaultLang() === 'ar' ? item.titleAr : item.titleEn }}</h5>
+      
+                      <!-- <button (click)="openlink(item.url)" class="btn news-button">
+                        {{ translate.getDefaultLang() === 'ar' ? "المزيد" : "Learn More" }}
+                      </button> -->
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>

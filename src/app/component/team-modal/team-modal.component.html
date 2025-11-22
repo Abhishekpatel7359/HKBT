@@ -1,0 +1,43 @@
+
+<section class="team-details">
+
+
+  <div class="container-fluid">
+    <div class="row">
+    
+              <div class="col-lg-12">
+                        <i (click)="dismiss()" class="fa-sharp fa-solid fa-circle-xmark float-right"></i>
+              </div>
+    
+              <div class="col-lg-9 col-md-7 order-lg-1 order-md-1 order-xl-1 order-2">
+                        <div class="team-description">
+            
+                          <p
+                            *ngFor="let item of teamDescription.description; let i = index"
+                          >
+                            {{ item.content }}
+                          </p>
+            
+                          <p class="mt-3 mb-3 author" [innerHTML]="teamDescription.author"></p>
+            
+                          <a
+                            *ngFor="let item of teamDescription.social"
+                            [href]="item.url"
+                            target="_blank"
+                          >
+                            <img *ngIf="item.url !== ''" [src]="item.icon"
+                          /></a>
+                    
+                        </div>
+                      </div>
+            
+                      <div class="col-lg-3 col-md-5 order-lg-2 order-md-2 order-xl-2 order-1">
+                        <img class="img-fluid co-founder mb-3" [src]="teamDescription.profile" />
+                      </div>
+    
+    
+    
+    </div>
+    </div>
+
+</section>

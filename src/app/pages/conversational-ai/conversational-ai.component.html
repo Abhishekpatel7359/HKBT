@@ -1,0 +1,438 @@
+<app-header></app-header>
+
+<div *ngIf="aiDetail">
+<section id="video-banner">
+    <video
+      playsinline
+      [muted]="'muted'"
+      loop
+      autoplay
+      [src]="aiDetail?.video"
+    ></video>
+
+  
+    <div class="video-content clear-fix">
+      <div class="container">
+        <h3>{{translate.getDefaultLang() === 'ar' ? aiDetail.titleAr : aiDetail.titleEn}}</h3>
+      </div>
+   
+    </div>
+  </section>
+
+
+  <section id="description" class="common-space">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-1 order-2 ">
+          <img class="img-fluid" [src]="aiDetail.image"/>
+        </div>
+  
+        <div class="col-lg-6 order-lg-2 order-1">
+          <h2 class="mb-3">{{aiDetail.title}}</h2>
+          <p *ngFor="let item of aiDetail.details">{{translate.getDefaultLang() === 'ar' ? item.contentAr : item.contentEn}}
+          </p>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="tabs" class="common-space">
+    <div class="container">
+      <div class="row">
+  
+        <div class="col-lg-12">
+          <h2 class="mb-4">
+            {{ translate.getDefaultLang() === 'ar' ? 'حالات الاستخدام التي نتميز بها' : 'Use Cases we excel' }}
+          </h2>
+        </div>
+        
+  
+        <div class="col-lg-4 col-sm-5 col-xl-5 col-6">
+          <ul class="nav nav-pills nav-stacked">
+            <li class="nav-item" *ngFor="let item of aiDetail.tabs; let i = index" [class.active]="i === activeTab"  (click)="activateTab(i)">{{translate.getDefaultLang() === 'ar' ? item.titleAr : item.titleEn}}
+              <i class="fa-solid fa-caret-right"></i>
+            </li>
+          </ul>
+          </div>
+  
+          
+          <div class="col-lg-8 col-sm-7 col-xl-7 col-6">
+  
+            <div class="tab-content">
+              <div class="tab-pane"  [class.active]="i === activeTab" *ngFor="let item of aiDetail.tabs; let i = index">
+                    <p *ngFor="let item of item.description">{{translate.getDefaultLang() === 'ar' ? item.contentAr : item.contentEn}}</p> 
+
+                    <h5>{{translate.getDefaultLang() === 'ar' ? item.subtitleAr : item.subtitleEn}}</h5>
+                    <ul>
+                      <li *ngFor="let item of item.list">{{translate.getDefaultLang() === 'ar' ? item.listItemAr : item.listItemEn}}</li>
+                    </ul>
+
+              </div>
+            </div>
+  
+          </div>
+                    
+                    
+      
+  
+          
+        </div>
+      </div>
+  
+    </section>
+
+    <section id="industries" class="common-space">
+        <div class="container">
+            <div class="row">
+              <div class="col-xl-12 mb-2">
+                <p class="title-description">{{ translate.getDefaultLang() === 'ar' ? 'الصناعات التي ندعمها' : 'Industries we support' }}</p>
+              </div>
+
+              <div class="col-xl-2 col-sm-4 col-6 mt-3" *ngFor="let item of aiDetail.industries">
+                  <div class="card">
+                    <div class="card-content text-center p-4">
+                <img class="img-fluid" [src]="item.icon"/>
+                <p class="mb-0 mt-2">{{translate.getDefaultLang() === 'ar' ? item.titleAr : item.titleEn}}</p>
+              </div>
+              </div>
+            </div>
+
+              
+              </div>
+              </div>
+    </section>
+
+
+    <section id="counter" class="common-space">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="counter-box">
+                <div
+                  class="counter-box--values text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
+                  <span
+                    class="counter-box--values_count"
+                    [countUp]="70"
+                    [options]="{ enableScrollSpy: true }"
+                    >0
+                  </span>
+                  <span class="counter-box--values_count">+</span> <br />
+                  <span>{{ translate.getDefaultLang() === 'ar' ? 'القنوات المدعومة' : 'Channels Supported' }}</span>
+                </div>
+      
+                <div
+                  class="counter-box--values text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2300"
+                >
+                  <span
+                    class="counter-box--values_count"
+                    [countUp]="132"
+                    [options]="{ enableScrollSpy: true }"
+                    >+
+                  </span>
+                  <span class="counter-box--values_count">%</span> <br />
+                  <span>{{ translate.getDefaultLang() === 'ar' ? 'اللغات المغطاة' : 'Languages Covered' }}</span>
+                </div>
+      
+                <div
+                  class="counter-box--values text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2200"
+                >
+                  <span
+                    class="counter-box--values_count"
+                    [countUp]="60"
+                    [options]="{ enableScrollSpy: true }"
+                    >0
+                  </span>
+                  <span class="counter-box--values_count">%</span> <br />
+                  <span>{{ translate.getDefaultLang() === 'ar' ? 'انخفاض التكلفة' : 'Decreased Cost' }}</span>
+                </div>
+      
+                <div
+                  class="counter-box--values text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2300"
+                >
+                  <span
+                    class="counter-box--values_count"
+                    [countUp]="200"
+                    [options]="{ enableScrollSpy: true }"
+                    >0
+                  </span>
+                  <span class="counter-box--values_count">%</span> <br />
+                  <span></span>
+                </div>
+
+                <div
+                class="counter-box--values text-center"
+                data-aos="fade-up"
+                data-aos-duration="2400"
+              >
+                <span
+                  class="counter-box--values_count"
+                  [countUp]="72"
+                  [options]="{ enableScrollSpy: true }"
+                  >0
+                </span>
+                <span class="counter-box--values_count">%</span> <br />
+                <span>{{ translate.getDefaultLang() === 'ar' ? 'زيادة تسجيلات المنتجات' : 'Increased Product Registrations' }}</span>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="partners" class="common-space" style="padding-bottom: 10px;">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <!-- <h6 class="title text-body">CONTACT US</h6> -->
+              <p class="title-description">{{ translate.getDefaultLang() === 'ar' ? 'موثوق به من قبل قادة الابتكار المعترف بهم عالميًا' : 'Trusted by Globally Recognized Innovation Leaders' }}</p>
+            </div>
+      
+            <div class="col-xl-12 mt-3 d-none d-lg-block d-sm-block">
+              <img class="img-fluid" src="./assets/images/conversational-ai/partners.png"/>
+            </div>
+      
+            <div class="col-xl-12 mt-5 d-block d-lg-none d-sm-none">
+              <img class="img-fluid" src="./assets/images/conversational-ai/partners-mobile.png"/>
+            </div>
+      
+            </div>
+            </div>
+      
+      </section>
+
+      <section id="schedule-demo" class="common-space" style="padding-top: 1rem;">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-xl-12">
+              <p class="title-description">{{ translate.getDefaultLang() === 'ar' ? 'جدولة العرض التجريبي المباشر الخاص بي' : 'Schedule my live demo' }}</p>
+            </div>
+            
+            <div class="col-lg-8 mt-5 mb-5">
+              <img class="img-fluid" src="./assets/images/conversational-ai/book.png"/>
+            </div>
+
+            <div class="col-lg-4 mt-5 mb-5 text-center">
+              <a href="conversational-ai?type=Conversational%20AI#contact" class="btn btn-primary btn-lg button-1">{{ translate.getDefaultLang() === 'ar' ? 'احجز عرضًا توضيحيًا' : 'Book a Demo' }}</a>
+            </div>
+            
+            
+          </div>
+        </div>
+      </section>
+
+
+      <app-case-study [casestudyPageParent]="caseStudyPage"></app-case-study>
+
+
+      <!-- contact -->
+<section id="contact" class="common-space">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 ">
+        <h6 class="title text-body">{{ translate.getDefaultLang() === 'ar' ? 'اتصل بنا' : 'CONTACT US' }}</h6>
+        <p class="title-description">{{ translate.getDefaultLang() === 'ar' ? 'تواصل معنا' : 'Get in touch' }}</p>
+      </div>
+
+      <div class="col-xl-5 ">
+
+        <div
+        class="content-box activebox mt-5 mb-5">
+        <h4>{{ translate.getDefaultLang() === 'ar' ? 'استمتع بتجربة الذكاء الاصطناعي للمحادثة بشكل مباشر' : 'Experience our Conversational AI firsthand' }}</h4>
+        <p>{{ translate.getDefaultLang() === 'ar' ? 'احجز العرض التجريبي الآن!' : 'Book a demo now!' }}</p>
+      </div>
+        
+      </div>
+
+      <div class="col-xl-1 d-block d-lg-none d-sm-none d-none">&nbsp;</div>
+
+
+      <div class="col-xl-6">
+        <form #contactus="ngForm">
+          <div class="form-floating mt-5 mb-5">
+            <input
+              [(ngModel)]="contactForm.username"
+              name="username"
+              type="text"
+              required
+              class="form-control custom-height"
+              id="username"
+              placeholder="Enter email"
+            />
+            <label class="cust-label" for="username"
+              >{{ translate.getDefaultLang() === 'ar' ? 'اسم الشركة' : 'Company Name' }} <span>*</span></label
+            >
+          </div>
+
+          <div class="form-floating mb-5">
+            <input
+              [pattern]="emailValid"
+              name="email"
+              [(ngModel)]="contactForm.email"
+              required
+              name="email"
+              type="email"
+              class="form-control custom-height"
+              id="email"
+              placeholder="Enter password"
+            />
+            <label class="cust-label" for="pwd"
+              >{{ translate.getDefaultLang() === 'ar' ? 'معرف البريد الإلكتروني للشركة' : 'Company Email ID' }} <span>*</span></label
+            >
+          </div>
+
+          <div class="form-floating mb-5">
+            <input
+              [(ngModel)]="contactForm.phoneNumber"
+              type="text"
+              pattern="[0-9]*"
+              [maxlength]="15"
+              [minlength]="8"
+              required
+              class="form-control custom-height"
+              placeholder="Enter password"
+              name="phoneNumber"
+            />
+            <label class="cust-label" for="phoneNumber"
+              >{{ translate.getDefaultLang() === 'ar' ? 'رقم الواتساب' : 'WhatsApp Number' }} <span>*</span></label
+            >
+          </div>
+
+          <div class="form-floating mt-5 mb-5">
+            <input
+              [(ngModel)]="contactForm.firstName"
+              name="firstName"
+              type="text"
+              required
+              class="form-control custom-height"
+              id="firstName"
+              placeholder="Enter email"
+            />
+            <label class="cust-label" for="firstName"
+              >{{ translate.getDefaultLang() === 'ar' ? 'الاسم الأول' : 'First Name' }} <span>*</span></label
+            >
+          </div>
+
+          <div class="form-floating mt-5 mb-5">
+            <input
+              [(ngModel)]="contactForm.lastName"
+              name="lastName"
+              type="text"
+              required
+              class="form-control custom-height"
+              id="lastName"
+              placeholder="Enter email"
+            />
+            <label class="cust-label" for="lastName"
+              >{{ translate.getDefaultLang() === 'ar' ? 'اسم العائلة' : 'Last name' }} <span>*</span></label
+            >
+          </div>
+
+          <div class="form-floating mt-5 mb-5">
+            <input
+              [(ngModel)]="contactForm.country"
+              name="country"
+              type="text"
+              required
+              class="form-control custom-height"
+              id="country"
+              placeholder="Enter country"
+            />
+            <label class="cust-label" for="country"
+              >{{ translate.getDefaultLang() === 'ar' ? 'دولة' : 'Country' }} <span>*</span></label
+            >
+          </div>
+
+        
+          <div class="form-floating mb-5">
+            <textarea
+              [(ngModel)]="contactForm.today"
+              class="form-control custom-height"
+              placeholder="Enter password"
+              rows="8"
+              required
+              id="today"
+              name="message"
+            ></textarea>
+            <label class="cust-label" for="today"
+              >{{ translate.getDefaultLang() === 'ar' ? 'ماذا تنظر اليوم؟' : 'What are you looking today?' }} <span>*</span></label
+            >
+          </div>
+
+          <div class="form-floating mb-5">
+            <textarea
+              [(ngModel)]="contactForm.achieve"
+              class="form-control custom-height"
+              placeholder="Enter password"
+              rows="8"
+              required
+              id="achieve"
+              name="message"
+            ></textarea>
+            <label class="cust-label" for="achieve"
+              >{{ translate.getDefaultLang() === 'ar' ? 'ما الذي تريد تحقيقه؟' : 'What you want to achieve?' }} <span>*</span></label
+            >
+          </div>
+
+          <div class="form-floating mb-5">
+            <textarea
+              [(ngModel)]="contactForm.launch"
+              class="form-control custom-height"
+              placeholder="Enter password"
+              rows="8"
+              required
+              id="launch"
+              name="message"
+            ></textarea>
+            <label class="cust-label" for="launch"
+              >{{ translate.getDefaultLang() === 'ar' ? 'ماذا تريد أن تطلق؟' : 'What do you want to launch?' }} <span>*</span></label
+            >
+          </div>
+
+          <div class="form-floating mb-5">
+            <textarea
+              [(ngModel)]="contactForm.budget"
+              class="form-control custom-height"
+              placeholder="Enter password"
+              rows="8"
+              required
+              id="budget"
+              name="message"
+            ></textarea>
+            <label class="cust-label" for="budget"
+              >{{ translate.getDefaultLang() === 'ar' ? 'ما هي ميزانيتك المعتمدة؟' : 'What’s your approved budget?' }}<span>*</span></label
+            >
+          </div>
+
+          <button
+            (click)="sendEmail()"
+            [disabled]="contactus.form.invalid"
+            type="button"
+            class="btn btn-primary btn-sm button-1"
+          >
+            {{ translate.getDefaultLang() === 'ar' ? 'إرسال رسالة' : 'SEND MESSAGE' }}
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<app-footer></app-footer>
+
+</div>

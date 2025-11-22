@@ -1,0 +1,24 @@
+[
+  {
+    "title": "City of Laguna Beach",
+    "titleAr": "مدينة لاجونا بيتش",
+    "image": "./assets/images/smart-city/case-study-1.png",
+    "url": "https://frogparking.com/city-of-laguna-beach/",
+    "description": ""
+   },
+   {
+    "title": "Palmerston North City Council",
+    "titleAr": "مجلس مدينة بالمرستون نورث",
+    "image": "./assets/images/smart-city/case-study-2.png",
+    "url": "https://frogparking.com/pncc/",
+    "description": ""
+   },
+   {
+    "title": "Irvine Spectrum Centre",
+    "titleAr": "مركز ايرفين الطيف",
+    "image": "./assets/images/smart-city/case-study-3.png",
+    "url": "https://frogparking.com/irvine-spectrum-centre/",
+    "description": ""
+   }
+  
+]

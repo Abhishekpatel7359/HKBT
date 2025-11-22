@@ -1,0 +1,45 @@
+[
+    {
+        "navigation": [
+            "Smart Interactive e-shirt System (RhythmAI®️)"
+        ]
+    },
+    {
+        "content": [
+            {
+                "id": 0,
+                "video": "src/assets/products/e-shirt.mp4",
+                "head": "Smart Interactive e-shirt System (RhythmAI®️)",
+                "title": "Smart Interactive e-shirt System (RhythmAI®️)",
+                "description": [
+                    {
+                        "para":"After meticulous research and development, we are proud to announce our patented AI-driven wearable system; and to unveil  our groundbreaking innovation that stands at the intersection of artificial intelligence, wearable technology, and sports tech."
+                    },
+                    {
+                        "para":"This sophisticated system is encapsulated within a smart interactive e-shirt, embedded with advanced IoT devices designed to monitor and analyze key physical metrics in real-time. Tailored specifically for the athletic domain, our wearable technology measures pain levels and fatigue, detects discomfort, injuries, and strains, thereby revolutionizing the way athletes’ well-being is managed during intense physical activities."
+                    },
+                    {
+                        "para":"Our system harnesses the power of AI and machine learning to interpret data coefficients from muscle force sensors, and various vital sign trackers like ECG, heart rate, respiration monitors, oxygen level., and blood pressure. This integration provides a comprehensive real-time overview of an athlete’s physical state, directly streaming data to our cloud for immediate analysis."
+                    },
+                    {
+                        "para":"The insights gleaned are not just numbers; they translate into actionable intelligence delivered via our Super App. This platform alerts coaches and medical teams about critical thresholds being reached, enabling swift decisions like player substitutions and strategy adjustments. This is particularly crucial in high-stakes environments such as top football leagues."
+                    },
+                    {
+                        "para":"Beyond sports, the versatility of our technology paves the way for applications in the military, paramilitary, and healthcare sectors, where monitoring and rapid response are equally vital."
+                    },
+                    {
+                        "para":"Join us as we lead the charge towards smarter, safer, and more strategic physical engagement in demanding fields around the world. With our innovative solution, we are setting new standards in wearable technology, opening up unprecedented opportunities for performance enhancement and injury prevention."
+                    }
+                ],
+                "bgImage": "/assets/images/industries/IOT.png"
+
+            },
+            {
+                "id": 1,
+                "video": "src/assets/products/e-shirt.mp4",
+                "head": "Smart Interactive e-shirt System (RhythmAI®️) (RhythmAI®️ )",
+                "title":"Sports Platform (KickAI®️)"
+            }
+        ]
+    }
+]

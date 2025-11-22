@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+<section *ngIf="details"  class="pt-5 pb-5">
+<div class="container">
+<div class="row">
+<div class="col-lg-9">
+<h1>{{details.name}}
+</h1>
+</div>
+</div>
+</div>
+
+<div class="col-lg-9">
+<img class="img-fluid" src="{{details.image}}"/>
+</div>
+
+<div class="container mt-5" >
+<div class="row">
+<div class="col-lg-9">
+<!-- <div [innerHTML]="details.fulldescription"> -->
+    <div [innerHTML]="translate.getDefaultLang() === 'ar' ? details.fulldescriptionAr : details.fulldescriptionEn">
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+</section>
+
+
+<app-footer></app-footer>
+
+
+
+

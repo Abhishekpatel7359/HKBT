@@ -1,0 +1,210 @@
+#video-banner {
+  position: relative;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+
+  .move-forward {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  video {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    object-fit: cover;
+  }
+
+  .video-content {
+    position: absolute;
+    top: 10%;
+    transform: translate(0, -50%);
+    width: 100%;
+    padding: 0 30px;
+    color: var(--white);
+
+    p {
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+  }
+}
+
+#tabs {
+  background-color: var(--primary-color);
+  color: var(--white);
+
+  .nav-pills {
+    display: block !important;
+    border: 1px solid #fff;
+
+    .nav-item {
+      display: block;
+      cursor: pointer;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #fff;
+      }
+
+      i {
+        font-size: 2rem;
+        visibility: hidden;
+      }
+    }
+
+    .active {
+      i {
+        visibility: visible !important;
+      }
+    }
+  }
+}
+
+#counter {
+  background-image: url("../../../assets/images/smart-city/4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+
+  .counter-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .counter-box--values {
+      span {
+        font-weight: 500;
+        color: var(--white);
+      }
+
+      span.counter-box--values_count {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+#industries {
+  .card {
+    box-shadow: 0 1px 3px rgba(23, 23, 23, 0.24);
+
+    img{
+      width: 50%;
+    }
+
+  }
+}
+
+#contact {
+  .activebox {
+    background: var(--gradient-3);
+    color: var(--white);
+  }
+
+  button {
+    padding: 0.5rem !important;
+  }
+
+  .content-box {
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 3rem 0 2rem;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--gradient-3);
+      color: #fff;
+    }
+  }
+
+  .custom-label {
+    background: #fff;
+    height: auto !important;
+    padding: 0 !important;
+    color: rgba(var(--bs-body-color-rgb), 0.65);
+    transform: scale(0.85) translateY(-0.8rem) translateX(0.75rem) !important;
+  }
+
+  .custom-height {
+    height: 67px;
+
+    .cust-label {
+      transform: translateY(0.4rem) translateX(0.15rem);
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #video-banner {
+    .video-content {
+      p {
+        font-size: 0.95rem;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .common-space {
+    padding: 6rem 1rem;
+  }
+
+  #tabs {
+    padding: 5rem 1rem !important;
+
+    h5 {
+      font-size: 1rem;
+    }
+
+    li {
+      font-size: 0.8rem;
+    }
+
+    .nav-pills {
+      .nav-item {
+        font-size: 0.9rem;
+      }
+
+      i {
+        display: none;
+      }
+
+      p,
+      li {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .tab-pane {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .counter-box {
+    display: block !important;
+  }
+.card-content{
+  p{
+    font-size: 0.85rem;
+  }
+}
+
+}

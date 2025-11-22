@@ -1,0 +1,175 @@
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-sm ">
+    <div class="container">
+      <a [routerLink]="['/']" class="navbar-brand"  >
+        <img src="/assets/images/hkb_logo.png" id="logo"/>
+      </a>
+
+      <div class="mobile-view" >
+        <div style="display: block; margin: 11px 0px 0px 0px;">
+          <span>
+            <h6 class="head" id="arebic">{{"Header.In Strategic Partnership with"  | translate}}</h6>
+          </span>
+          <span>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0  imgul" id="img">
+            
+              <li class="nav-item" >
+                <a href="" class="nav-link" id="googleimg"><img src="../../../assets/images/google.png" class="google" id="g"></a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link" id="awsimg" ><img src="../../../assets/images/amazon_PNG13.png" class="awss"></a>
+              </li>
+      
+              <li class="nav-item">
+                <a href="" class="nav-link" id="nvdiaimg"><img src="../../../assets/images/nvdia logo.png" class="nvdia"></a>
+      
+              </li>
+            </ul>
+          </span>
+        </div>
+        
+        <div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          
+            <li class="nav-item" *ngIf="language === 'en'"  (click)="switchlang('ar')">
+              <a class="nav-link"><img style="width: 26px;height: 20px; margin: 9px 0px" src="../../../assets/images/flag.png"></a>
+            </li>
+  
+            <li class="nav-item" *ngIf="language === 'ar'" (click)="switchlang('en')">
+              <a class="nav-link"><img style="width: 20px;height: 20px; margin: 3px 0px;" src="../../../assets/images/english.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     
+
+      <!-- desktop-view -->
+
+      <div class="collapse navbar-collapse ms-5" id="mynavbar">
+        <ul class="navbar-nav me-auto ulnav">
+          <!-- <li class="nav-item" (click)="closeNavbar()">
+            <a href="/about-us" class="nav-link">{{"Header.ABOUT US" | translate}}</a>
+          </li> -->
+          <li class="nav-item" (click)="navigate('', '', 'A')">
+            <a class="nav-link">{{"Header.ABOUT US" | translate}}</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">{{"Header.SERVICES" | translate}}  <i class="fas fa-chevron-down rotate-icon"></i></a>
+            <ul class="dropdown-menu pt-4">
+              <div class="container ">
+                <div class="row">
+                  <div class="col-lg-2 mb-4" *ngFor="let item of services; let i=index">
+                    <p (click)="navigate(item, i, 'S')" class="mb-0">{{item.title}}</p>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">{{"Header.INDUSTRIES" | translate}} <i class="fas fa-chevron-down rotate-icon"></i></a>
+            <ul class="dropdown-menu pt-4">
+              <div class="container ">
+                <div class="row" *ngIf="industries">
+                  <div class="col-lg-2 mb-4" *ngFor="let item of industries[1].content; let i=index">
+                    <p (click)="navigate(item, i, 'I')" class="mb-0">{{item.title}}</p>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a  class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">{{"Header.OUR PRODUCTS" | translate}} <i class="fas fa-chevron-down rotate-icon"></i></a>
+            <ul class="dropdown-menu pt-4">
+              <div class="container ">
+                <div class="row" *ngIf="product">
+                  <div class="col-lg-2 mb-4" style=" width: 100%;" style="display: flex; gap:10px">
+                    <a href="#products" class="mb-0" style="color: black; text-decoration: none;">{{ product[1].content[0].title }}</a>
+                  </div>
+                  <div class="col-lg-2 mb-4" style=" width: 100%;"  style="display: flex; gap:10px">
+                    <a href="https://kickscore.eprime.app/" target="_blank" class="mb-0" style="color: black; text-decoration: none;">{{ product[1].content[1].title }}</a>
+                  </div>
+                </div>
+                
+              </div>
+            </ul>
+          </li>
+
+          <!-- <li class="nav-item" (click)="closeNavbar()">
+            <a class="nav-link">{{ "Header.Our Products" | translate }} <i class="fas fa-chevron-down rotate-icon"></i></a>
+            <ul class="dropdown-menu pt-4">
+              <div class="container">
+                <div class="row" >
+                  <div class="col-lg-2 mb-4">
+                    <p>{{ product.title }}</p>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li> -->
+          
+
+          <!-- <li class="nav-item" (click)="closeNavbar()">
+            <a href="#blog" class="nav-link">{{"Header.BLOGS" | translate}}</a>
+          </li> -->
+
+         
+
+          <li class="nav-item" (click)="closeNavbar()">
+            <a href="#contact" class="nav-link">{{"Header.CONTACT US" | translate}}</a>
+          </li>
+
+          <li style="cursor: pointer;" class="nav-item" (click)="navigate('', '', 'C')">
+            <a class="nav-link">{{"Header.SMART CITY" | translate}}</a>
+          </li>
+         
+         
+        </ul>
+        
+      <div class="none">
+        <span>
+          <h6 style="font-weight: 600;
+          font-size: xx-small;
+          margin: 0 0 -4px;" id="heading">{{"Header.In Strategic Partnership with"  | translate}}</h6>
+         </span>
+         <span>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+           
+           
+            <li class="nav-item">
+              <a href="" class="nav-link"><img src="../../../assets/images/google.png" class="google" id="google"></a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link" ><img src="../../../assets/images/amazon_PNG13.png" class="aws" id="aws"></a>
+            </li>
+    
+            <li class="nav-item">
+              <a href="" class="nav-link"><img src="../../../assets/images/nvdia logo.png" class="nvdia" id="nvdia" ></a>
+    
+            </li>
+          </ul>
+         </span>
+      </div>
+        
+       <span class="flag">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          
+          <li class="nav-item" *ngIf="language === 'en'"  (click)="switchlang('ar')">
+            <a class="nav-link">عربي <img style="width: 26px;height: 20px;" src="../../../assets/images/flag.png"></a>
+          </li>
+
+          <li class="nav-item" *ngIf="language === 'ar'" (click)="switchlang('en')">
+            <a class="nav-link">English <img style="width: 20px;height: 20px; margin: 3px 0px;" src="../../../assets/images/english.png" alt=""></a>
+          </li>
+        </ul>
+       </span>
+      </div>
+
+
+     

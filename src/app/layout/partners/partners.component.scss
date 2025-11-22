@@ -1,0 +1,14 @@
+.img{
+  padding: 10px 0px 10px 10%;}
+
+  .partner-image {
+    width: 180px;
+    height: 135px;
+    // margin: 0 0 -26px 45%;
+  }
+  @media (max-width: 768px) {
+  .partner-image{
+    width: 90%;
+    height: auto;
+    margin: 0px 10px;
+    }}

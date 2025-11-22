@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;500&display=swap");
+@import "animate.css/animate.css";
+@import "./assets/css/customise.css";
+
+
+
+body {
+  overflow-x: hidden !important;
+  font-family: "Noto Sans Georgian", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 1.2rem !important;
+  overflow-x: hidden;
+  color: #333;
+  position: relative;
+}
+
+:root {
+  --primary-color: #12122a; /* Blue color */
+  --secondary-color: #29ffc6; /* Yellow color */
+  --blue: #032175;
+  --white: #fff;
+  --gradient: linear-gradient(90deg, #6d33cc 0, #2277f8);
+  --gradient-1: linear-gradient(0deg, #6d33cc 17%, #2277f8 100%);
+  --gradient-3: linear-gradient(90deg, #6d33cc 0, #2277f8);
+  /* Define your gradient here */
+}

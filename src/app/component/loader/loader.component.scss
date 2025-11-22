@@ -1,0 +1,70 @@
+.loader-box{
+  height: 100vh;
+          overflow: hidden;
+          position: fixed;
+          top: 0;
+          left: 0;
+          background-color: var(--white);
+          z-index: 1030;
+          width: 100%;
+
+  div{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100%;
+
+    img{
+      display: block;
+      margin: auto;
+      width: 6%;
+    }
+
+    p{
+      text-align: center;
+      width: 100%;
+      background: linear-gradient(0deg,#6d33cc 17%,#2277f8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+    }
+  }
+  
+ 
+  
+}
+
+
+.loderhide {
+  animation: slideUpAndHide 1s forwards;
+// display: none;
+}
+
+
+@keyframes slideUpAndHide {
+  0% {
+    transform: translateY(0);
+  }
+  // 50% {
+  //   transform: translateY(-50%); /* Slide up to this position */
+  // }
+  100% {
+    transform: translateY(-100%); /* Slide up and hide completely */
+    // opacity: 0; /* Fade out while sliding up */
+  }
+}
+
+
+
+@media only screen and (max-width: 767px)  {
+
+  .loader-box{
+
+    img{
+      width: 25% !important;
+    }
+
+  }
+
+}

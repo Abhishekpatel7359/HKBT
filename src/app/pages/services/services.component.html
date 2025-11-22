@@ -1,0 +1,84 @@
+<app-header></app-header>
+
+<section id="video-banner">
+  <video
+    class="d-xl-block d-lg-block d-sm-block d-xs-none d-none"
+    playsinline
+    [muted]="'muted'"
+    loop
+    autoplay
+    [src]="details?.video"
+  ></video>
+
+
+  <video
+  class="d-xl-none d-lg-none d-sm-none d-xs-block d-block"
+  playsinline
+  [muted]="'muted'"
+  loop
+  autoplay
+  [src]="details?.mobileVideourl"
+></video>
+
+  <div class="video-content clear-fix">
+    <div class="container">
+      <h3 style="margin: -49px -37px;">{{details.title}}</h3>
+    </div>
+ 
+  </div>
+</section>
+
+<section id="description" class="common-space">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 order-lg-1 order-2 ">
+        <img class="img-fluid" [src]="details.image"/>
+      </div>
+
+      <div class="col-lg-6 order-lg-2 order-1">
+        <h2 class="mb-3">{{details.title}}</h2>
+        <p *ngFor="let item of details.details">{{item.content}}</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tabs" class="common-space">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-12">
+        <h2 class="mb-4">{{'indservices.header' | translate}}</h2>
+      </div>
+
+      <div class="col-lg-4 col-sm-5 col-xl-5 col-5">
+        <ul class="nav nav-pills nav-stacked">
+          <li class="nav-item" *ngFor="let item of details.tabs; let i = index" [class.active]="i === activeTab"  (click)="activateTab(i)">{{ item.title }}
+            <i class="fa-solid fa-caret-right"></i>
+          </li>
+        </ul>
+        </div>
+
+        
+        <div class="col-lg-8 col-sm-7 col-xl-7 col-7">
+
+          <div class="tab-content">
+            <div class="tab-pane"  [class.active]="i === activeTab" *ngFor="let item of details.tabs; let i = index">
+                  <p>{{item.description}}</p> 
+                  <!-- <p class="mobile-hide">{{tab.Mobiledescription}}</p>  -->
+            </div>
+          </div>
+
+        </div>
+                  
+                  
+    
+
+        
+      </div>
+    </div>
+
+  </section>
+
+<app-footer></app-footer>

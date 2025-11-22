@@ -1,0 +1,165 @@
+{
+    "titleEn": "Conversational and Generative AI",
+    "titleAr": "الذكاء الاصطناعي التحادثي والتوليدي",
+    "Dpage":true,
+    "video": "/assets/services/Conv-AI-Temporary-Video.mp4",
+    "mobileVideourl": "/assets/services/Conv-AI-Temporary-Video.mp4",
+    "image": "/assets/images/industries/1.png",
+    "details": [
+      {
+        "contentEn": "Since its launch, OpenAI’s generative AI platform ChatGPT has taken the world by storm and brought new people to HKB Tech – not just to learn about ChatGPT, but also how HKB Tech together with its partner UIB make generative AI, conversational AI, and digital avatars easier for companies and government entities to use to decrease costs, increase revenues, and delight users. UIB’s technologies make human-to-machine communication as simple as human-to-human communication. HKB Tech sells solutions with UIB’s two flagship platforms, the UIB UnificationEngine® omnichannel Messaging Service Platform (MSP) and the UIB Unified AI® chatbot builder platform.",
+        "contentAr": "منذ إطلاقها، اجتاحت منصة ChatGPT للذكاء الاصطناعي التوليدية التابعة لـ OpenAI العالم وجلبت أشخاصًا جدد إلى HKB Tech - ليس فقط للتعرف على ChatGPT، ولكن أيضًا كيف تقوم HKB Tech بالتعاون مع شريكها UIB بإنشاء ذكاء اصطناعي توليدي، وذكاء اصطناعي للمحادثة، وصور رمزية رقمية. يسهل على الشركات والجهات الحكومية استخدامه لخفض التكاليف وزيادة الإيرادات وإسعاد المستخدمين. تجعل تقنيات UIB التواصل بين البشر والآلات بسيطًا مثل التواصل بين البشر. تبيع HKB Tech الحلول من خلال منصتي UIB الرئيسيتين، منصة خدمة الرسائل متعددة القنوات (MSP) UIB UnificationEngine ومنصة إنشاء روبوتات الدردشة UIB Unified AI®."
+      },
+      {
+        "contentEn": "With UnificationEngine, people can talk and text on over 50 popular platforms, including the WhatsApp Business Platform, Facebook Messenger, Apple Messages for Business, Google’s Business Messages, Instagram, X, and more. With Unified AI, companies and government entities can launch chatbots, virtual assistants, and digital avatars for support, sales, scheduling, and dozens of other use cases across every industry vertical in 130+ languages, including Arabic. ",
+        "contentAr": "باستخدام UnificationEngine، يمكن للأشخاص التحدث وإرسال الرسائل النصية على أكثر من 50 منصة شائعة، بما في ذلك منصة WhatsApp Business وFacebook Messenger وApple messages for Business وGoogle’s Business messages وInstagram وX والمزيد. باستخدام الذكاء الاصطناعي الموحد، يمكن للشركات والجهات الحكومية إطلاق روبوتات الدردشة والمساعدين الافتراضيين والصور الرمزية الرقمية للدعم والمبيعات والجدولة وعشرات من حالات الاستخدام الأخرى عبر كل قطاع صناعي بأكثر من 130 لغة، بما في ذلك اللغة العربية."
+      }
+    ],
+    "tabs": [
+      {
+        "titleEn": "Customer Service and Support",
+        "titleAr": "خدمة العملاء والدعم",
+        "description": [
+          { "contentEn": " Customers message questions 24x7x365 in natural language text and speech in any language using their favorite messaging apps."},
+          { "contentAr": "يرسل العملاء أسئلة على مدار 24 ساعة طوال أيام الأسبوع في نصوص وكلام باللغة الطبيعية وبأي لغة باستخدام تطبيقات المراسلة المفضلة لديهم."},
+          { "contentEn": "Companies instantly answer questions in their brands’ voice, forwarding new questions to live agents to reply and train the AI."},
+          { "contentAr": "تجيب الشركات على الفور على الأسئلة بصوت علاماتها التجارية، وترسل أسئلة جديدة إلى الوكلاء المباشرين للرد وتدريب الذكاء الاصطناعي."}
+        ],
+        "subtitleEn": "Impact achieved:",
+        "subtitleAr": "التأثير المحقق:",
+        "list": [
+          { "listItemEn": "Minimizes costs", "listItemAr": "يقلل من التكاليف" },
+          { "listItemEn": "Increases revenues", "listItemAr": "يزيد الإيرادات" },
+          { "listItemEn": "Optimizes staff", "listItemAr": "يحسن الموظفين" },
+          { "listItemEn": "Delights customers", "listItemAr": "يسعد العملاء" }
+        ]
+      },
+      {
+        "titleEn": "In-store online Conversational Commerce",
+        "titleAr": "التجارة التحادثية عبر الإنترنت في المتجر",
+        "description": [
+          { "contentEn": " Prospective and existing customers who know exactly what they want (and don’t!) effortlessly ask questions with zero sales pressure or time constraints."},
+          { "contentAr": "العملاء المحتملون والحاليون الذين يعرفون بالضبط ما يريدون (ولا يريدون!) يطرحون الأسئلة بسهولة دون أي ضغوط مبيعات أو قيود زمنية."},
+          { "contentEn": "Shares documents, videos, images, and text with live agent handover (as needed) to answer unique questions and FAQs to move customers through the sales conversion funnel."},
+          { "contentAr": "يشارك المستندات ومقاطع الفيديو والصور والنصوص مع تسليم الوكيل المباشر (حسب الحاجة) للإجابة على الأسئلة الفريدة والأسئلة الشائعة لنقل العملاء عبر مسار تحويل المبيعات."}
+        ],
+        "subtitleEn": "Impact achieved:",
+        "subtitleAr": "التأثير المحقق:",
+        "list": [
+          { "listItemEn": "Lowers expenditure", "listItemAr": "يخفض الإنفاق" },
+          { "listItemEn": "Optimizes sales cycle time", "listItemAr": "يحسن وقت دورة المبيعات" },
+          { "listItemEn": "Increases staff efficiency", "listItemAr": "يزيد من كفاءة الموظفين" },
+          { "listItemEn": "Delights shoppers", "listItemAr": "يسعد المتسوقين" }
+      
+        ]
+      },
+      {
+        "titleEn": "Identity Authentication",
+        "titleAr": "مصادقة الهوية",
+        "description": [
+          { "contentEn": "Customers authenticate their identity via chat 24x7x365 in natural language text and speech in any language using their favorite messaging apps."},
+          { "contentAr": "يقوم العملاء بمصادقة هويتهم عبر الدردشة على مدار 24 ساعة طوال أيام الأسبوع في نصوص وكلام باللغة الطبيعية بأي لغة باستخدام تطبيقات المراسلة المفضلة لديهم."},
+          { "contentEn": "Companies securely complete transactions (including purchases), provide services, and answer questions after verifying the user’s identity."},
+          { "contentAr": "تُكمل الشركات المعاملات (بما في ذلك عمليات الشراء) بشكل آمن، وتقدم الخدمات، وتجيب على الأسئلة بعد التحقق من هوية المستخدم."}
+        ],
+        "subtitleEn": "Impact achieved:",
+        "subtitleAr": "التأثير المحقق:",
+        "list": [
+          { "listItemEn": "Minimizes costs", "listItemAr": "يقلل من التكاليف" },
+          { "listItemEn": "Increases revenues", "listItemAr": "يزيد الإيرادات" },
+          { "listItemEn": "Increases security", "listItemAr": "يزيد من الأمن" },
+          { "listItemEn": "Delights customers", "listItemAr": "يسعد العملاء" }
+        ]
+      },
+      {
+        "titleEn": "Customer, FRANCHISE/Broker, and Employee Onboarding",
+        "titleAr": "العملاء، الامتياز/الوسيط، وتأهيل الموظفين",
+        "description": [
+          { "contentEn": "New people experience one-on-one, bespoke learning at their own pace, including stopping, starting, and asking for needed help at any time."},
+          { "contentAr": "يختبر الأشخاص الجدد تعلمًا فرديًا ومخصصًا بالسرعة التي تناسبهم، بما في ذلك التوقف والبدء وطلب المساعدة اللازمة في أي وقت."},
+          { "contentEn": "Virtual assistant/chatbot uses the most effective combination of documents, videos, audios, images, and text with live agent handover (as needed)."},
+          { "contentAr": "يستخدم المساعد الافتراضي/chatbot المجموعة الأكثر فعالية من المستندات ومقاطع الفيديو والتسجيلات الصوتية والصور والنصوص مع تسليم الوكيل المباشر (حسب الحاجة)."}
+        ],
+        "subtitleEn": "Impact achieved:",
+        "subtitleAr": "التأثير المحقق:",
+        "list": [
+          { "listItemEn": "Cuts costs", "listItemAr": "يخفض التكاليف" },
+          { "listItemEn": "Increases accuracy", "listItemAr": "يزيد من الدقة" },
+          { "listItemEn": "Optimizes staff", "listItemAr": "يحسن الموظفين" },
+          { "listItemEn": "Delights new customers and agents", "listItemAr": "يسعد العملاء والوكلاء الجدد" }
+        ]
+      },
+      {
+        "titleEn": "Applications and Forms Processing",
+        "titleAr": "معالجة الطلبات والنماذج",
+        "description": [
+          { "contentEn": "Customers and employees can enter all of the required information, including scanning documents and sending photos and videos, needed to complete the process."},
+          { "contentAr": "يمكن للعملاء والموظفين إدخال جميع المعلومات المطلوبة، بما في ذلك مسح المستندات ضوئيًا وإرسال الصور ومقاطع الفيديو، اللازمة لإكمال العملية."},
+          { "contentEn": "Can explain exactly what is needed for each step of the process at the user’s pace, confirming when information is successfully received."},
+          { "contentAr": "يمكن أن يشرح بالضبط ما هو مطلوب لكل خطوة من خطوات العملية بوتيرة المستخدم، مما يؤكد متى يتم تلقي المعلومات بنجاح."}
+        ],
+        "subtitleEn": "Impact achieved:",
+        "subtitleAr": "التأثير المحقق:",
+        "list": [
+          { "listItemEn": "Saves costs", "listItemAr": "يوفر التكاليف" },
+          { "listItemEn": "Lesser time to resolve enquiries", "listItemAr": "وقت أقل لحل الاستفسارات" },
+          { "listItemEn": "Optimizes staff", "listItemAr": "يحسن الموظفين" },
+          { "listItemEn": "Reduces customers’ stress and anxiety", "listItemAr": "يقلل من التوتر والقلق لدى العملاء" }
+        ]
+      },
+      {
+        "titleEn": "Emergency and Non-Emergency Broadcasting",
+        "titleAr": "البث في حالات الطوارئ وغير الطوارئ",
+        "description": [
+          { "contentEn": "Users receive push messages and can ask questions of the organization's knowledge base i.e., safety, prevention, preparation. etc. for seasonal accidents, natural disasters, and pandemics."},
+          { "contentAr": "يتلقى المستخدمون رسائل دفع ويمكنهم طرح أسئلة حول قاعدة معارف المنظمة، مثل السلامة والوقاية والإعداد. وما إلى ذلك للحوادث الموسمية والكوارث الطبيعية والأوبئة."},
+          { "contentEn": "Send out rich media information when and where it’s needed most for scheduled and unplanned events i.e., hurricane season, flu season, earthquake, etc."},
+          { "contentAr": "أرسل معلومات الوسائط الغنية متى وأينما تكون هناك حاجة إليها بشدة للأحداث المجدولة وغير المخطط لها، مثل موسم الأعاصير وموسم الأنفلونزا والزلازل وما إلى ذلك."}
+        ],
+        "subtitleEn": "Impact achieved:",
+        "subtitleAr": "التأثير المحقق:",
+        "list": [
+          { "listItemEn": "Reduces accidents and injuries", "listItemAr": "يقلل من الحوادث والإصابات" },
+          { "listItemEn": "Less dependency on external staff", "listItemAr": "تقليل الاعتماد على الموظفين الخارجيين" },
+          { "listItemEn": "Optimizes costs", "listItemAr": "يحسن التكاليف" }
+        ]
+      },
+      {
+        "titleEn": "Facilities Management and Building Controls",
+        "titleAr": "إدارة المرافق وضوابط البناء",
+        "description": [
+          { "contentEn": "Queries on devices, incidents, cleaning, maintenance, repairs, availability, status, supplies, schedules, etc."},
+          { "contentAr": "الاستعلامات عن الأجهزة والحوادث والتنظيف والصيانة والإصلاحات والتوفر والحالة والإمدادات والجداول الزمنية وما إلى ذلك."},
+          { "contentEn": "Scheduled, sensor-/camera- triggered, and real-time alerts and notifications are received by staff members and connected devices and facilities."},
+          { "contentAr": "يتلقى الموظفون والأجهزة والمرافق المتصلة تنبيهات وإشعارات مجدولة، يتم تشغيلها بواسطة أجهزة الاستشعار/الكاميرا، وفي الوقت الفعلي."}
+        ],
+        "subtitleEn": "Impact achieved:",
+        "subtitleAr": "التأثير المحقق:",
+        "list": [
+          { "listItemEn": "Improved communications result in improved efficiency", "listItemAr": "يؤدي تحسين الاتصالات إلى تحسين الكفاءة" },
+          { "listItemEn": "Increased staff productivity / utilization", "listItemAr": "زيادة إنتاجية/استخدام الموظفين" },
+          { "listItemEn": "Streamlined building maintenance and operations", "listItemAr": "تبسيط عمليات وصيانة المباني" }
+        ]
+      }
+     
+    ],
+      "industries": [
+        { "titleEn": "Smart City", "titleAr": "المدن الذكية", "icon": "./assets/images/conversational-ai/icons/smart-city.png" },
+        { "titleEn": "Fintech", "titleAr": "التكنولوجيا المالية", "icon": "./assets/images/conversational-ai/icons/fintech.png" },
+        { "titleEn": "Insurance", "titleAr": "التأمين", "icon": "./assets/images/conversational-ai/icons/Insurance.png" },
+        { "titleEn": "Manufacturing", "titleAr": "التصنيع", "icon": "./assets/images/conversational-ai/icons/Manufacturing.png" },
+        { "titleEn": "Fit-tech", "titleAr": "تكنولوجيا اللياقة البدني", "icon": "./assets/images/conversational-ai/icons/Fit-tech.png" },
+        { "titleEn": "Banking", "titleAr": "المصارف", "icon": "./assets/images/conversational-ai/icons/Banking.png" },
+        { "titleEn": "Healthcare", "titleAr": "الرعاية الصحية", "icon": "./assets/images/conversational-ai/icons/Healthcare.png" },
+        { "titleEn": "Biotech", "titleAr": "التكنولوجيا الحيوية", "icon": "./assets/images/conversational-ai/icons/Biotech.png" },
+        { "titleEn": "Energy", "titleAr": "الطاقة", "icon": "./assets/images/conversational-ai/icons/Energy.png" },
+        { "titleEn": "Real Estate", "titleAr": "العقارات", "icon": "./assets/images/conversational-ai/icons/Real-Estate.png" },
+        { "titleEn": "Retail", "titleAr": "التجزئة", "icon": "./assets/images/conversational-ai/icons/Retail.png" },
+        { "titleEn": "Public Services", "titleAr": "الخدمات العامة", "icon": "./assets/images/conversational-ai/icons/Public-Services.png" },
+        { "titleEn": "Logistics", "titleAr": "اللوجستيات", "icon": "./assets/images/conversational-ai/icons/logistics.png" },
+        { "titleEn": "Education", "titleAr": "التعليم", "icon": "./assets/images/conversational-ai/icons/Education.png" },
+        { "titleEn": "Construction", "titleAr": "البناء", "icon": "./assets/images/conversational-ai/icons/Construction.png" },
+        { "titleEn": "Tourism", "titleAr": "السياحة", "icon": "./assets/images/conversational-ai/icons/Tourism.png" }
+      ]
+    
+  }

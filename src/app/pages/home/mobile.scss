@@ -1,0 +1,204 @@
+@media only screen and (max-width: 767px) {
+          #video-banner {
+            .video-content {
+              p {
+                font-size: 0.95rem;
+              }
+        
+              h3 {
+                font-size: 1.1rem;
+              }
+            }
+          }
+        
+          #about {
+            padding: 6rem 1rem;
+          }
+        
+          .about-desktop {
+            display: none !important;
+          }
+        
+          .about-mobile {
+            display: block !important;
+        
+            ul {
+              padding-left: 0;
+              display: block !important;
+        
+              li {
+                display: grid;
+                grid-template-columns: 1fr 5fr;
+                grid-row-gap: 0rem;
+                align-items: center;
+        
+                &:not(:last-child) {
+                  margin-bottom: 1rem;
+                }
+        
+                img {
+                  height: 25px;
+                }
+              }
+            }
+          }
+          .panel {
+            min-width: 100%;
+            border: 1px solid #ffffff73;
+            padding: 1rem;
+        
+            &:not(:last-child) {
+              margin-bottom: 1rem;
+            }
+          }
+        
+          #team {
+      
+        
+            p{
+              font-size: 15px;
+            }
+        
+        
+        
+            p.title {
+              font-size: 1.2rem;
+            }
+
+            .team-description{
+                    padding: 1rem;
+            }
+        
+            .co-founder {
+              width: 75%;
+              position: relative;
+              float: right;
+            }
+        
+            .bg-1 {
+              background-position: 85% 100%;
+            }
+        
+            .team-container {
+              background-attachment: scroll;
+            }
+          }
+        
+          #video-banner {
+            .video-content {
+              padding: 0;
+              bottom: 15%;
+            }
+        
+            .move-forward {
+              right: -14%;
+              top: 90%;
+            }
+          }
+        
+          .common-space {
+            padding: 6rem 1rem;
+          }
+        
+          .common-padding {
+            padding: 6rem 1rem 0;
+          }
+        
+          #services {
+            .carousel-cell {
+              width: 80%;
+            }
+          }
+        
+          #partners {
+            .carousel-cell {
+              width: 30%;
+              height: auto;
+            }
+          }
+        
+          #sector {
+            background-color: #12122a;
+        
+            p {
+              display: block;
+            }
+          }
+        
+          .carousel-main {
+            .custom-box {
+              padding: 6rem 2rem;
+              display: block;
+              background-position: 30% 0;
+            }
+        
+            .class-1 {
+              background-position: 47% 0;
+            }
+        
+            .class-2 {
+              background-position: 23% 0;
+            }
+        
+            .class-3 {
+              background-position: 69% 0;
+            }
+        
+            .class-7 {
+              background-position: 15% 0;
+            }
+        
+            .class-10 {
+              background-position: 50% 0;
+            }
+        
+            .class-15 {
+              background-position: 76% 0;
+            }
+        
+            .class-16 {
+              background-position: 68% 0;
+            }
+          }
+        
+          #sector {
+            .sector-navigation {
+              .carousel-cell {
+                font-size: 0.8rem;
+              }
+            }
+        
+            .static-content {
+              p {
+                font-size: 0.8rem !important;
+              }
+        
+              h6 {
+                font-size: 0.9rem !important;
+              }
+            }
+        
+            h2 {
+              font-size: 0.9rem !important;
+            }
+        
+            p {
+              font-size: 0.8rem !important;
+            }
+          }
+        
+          .sector-types {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 0.5rem;
+          }
+        
+          #news {
+            .carousel-cell {
+              width: 100%;
+              margin-right: 15px;
+              height: 450px;
+            }
+          }
+        }
+        
+ 

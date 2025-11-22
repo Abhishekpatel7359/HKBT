@@ -1,0 +1,219 @@
+<app-header></app-header>
+
+<!-- video banner -->
+<section id="video-banner">
+  <video playsinline [muted]="'muted'" loop autoplay [src]="videoSource"></video>
+
+  <div class="video-content clear-fix">
+    <div class="container">
+
+      <h1 appTypewritter [text]="typewriterText" [speed]="100"></h1>
+      <h3 appTypewritter [text]="typewritersubText" [speed]="150"></h3>
+    </div>
+    <!-- <a class="move-forward" href="#about">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+      </a> -->
+  </div>
+</section>
+
+<section id="smartCity" class="common-space">
+  <div class="container">
+    <div class="row">
+
+      <div class="d-xl-none d-lg-none d-sm-none col-12">
+        <img class="img-fluid" src="./assets/images/smart-city/1.png" />
+      </div>
+
+      <div class="col-xl-8 offset-xl-4">
+        <div class="smartCity-bg">
+          <div class="smartCity-bg--content" data-aos="fade-right" id="smartCitySlider">
+            <h2>{{translate.getDefaultLang() === 'ar' ? 'المدينة الذكية' : 'Smart City'}}</h2>
+            <p>
+              {{translate.getDefaultLang() === 'ar'
+              ? 'مرحبا بكم في طليعة المناطق الحضرية التطور - مرحبًا بكم في حلول المدينة الذكية من HKB TECH، حيث يتقارب
+              الابتكار التكنولوجي مع المناطق الحضرية التقدم لتشكيل مدن الغد. مستوحاة من مبادرات المملكة العربية السعودية
+              في هذا المجال، نحن في HKB TECH ملتزمون بإعادة تعريف المناظر الطبيعية الحضرية من خلال دمج أحدث التقنيات
+              والتكنولوجيا واستراتيجيات التفكير المستقبلي.'
+              : 'Welcome to the forefront of urban evolution—welcome to HKB TECH\'s Smart City Solutions, where
+              technological innovation converges with urban advancement to shape the cities of tomorrow. Inspired by the
+              initiatives of the Kingdom of Saudi Arabia in this domain, we at HKB TECH are committed to redefining
+              urban landscapes by integrating cutting-edge technology and forward-thinking strategies.'}}
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="urbanMobility" class="common-space">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-lg-6 text-center mb-4">
+       
+  <video
+              playsinline
+              [muted]="isMuted"
+              loop
+              autoplay
+              [src]="videolink"
+              style="width: 100%; height: 100%;"
+              #videoPlayer>
+            </video>
+            <button class="mutebtn"
+              (click)="toggleMute(videoPlayer)"
+              style="">
+              <i class="fa" [class.fa-volume-mute]="isMuted" [class.fa-volume-up]="!isMuted" style="color: white;"></i>
+            </button>
+
+      </div>
+
+      <div class="col-lg-6">
+        <p>
+          {{translate.getDefaultLang() === 'ar'
+          ? 'في عالم سريع الوتيرة، يجب ألا تكون مهمة العثور على موقف للسيارات معقدة. نقدم لكم في إتش كي بي تقنيات حلول مواقف السيارات الذكية، العصرية والمستدامة. 
+          تقود تقنياتنا المتقدمة الطريق في ثورة إدارة المواقف باستخدام إنترنت الأشياء ومستشعرات الركن الذكية والحلول السحابية، حيث يمكنك تخيل عالم يكون فيه كل موقف مُحسّن، وكل نقطة وصول منظمة، وكل إمكانية للإيراد مُعظمة.
+          في المملكة العربية السعودية، حيث الوقت ثمين والكفاءة حيوية، تعد تقنياتنا شريكك الموثوق في تحويل المشهد الحضري. حلولنا الشاملة، من المواقف العامة المفتوحة إلى المرافق المغلقة، مصممة لتلبية الاحتياجات المتنوعة.
+          مع تطبيق سهل الاستخدام للهاتف المحمول بخيارات دفع متعددة، لم يكن دفع رسوم مواقف السيارات بهذه السهولة من قبل. يقدم لوح التحكم القائم على السحابة رؤى لحظية، مما يتيح الوصول إلى بيانات المواقف القيمة بنقرة واحدة.
+          يقلل نظامنا المتقدم لإرشادات المواقف من الازدحام، مما يعزز تجربة كل من السائقين والمشاة. للمرافق المغلقة، تضمن أنظمتنا المضمونة للوصول والتحكم في الإيرادات الراحة دون المساس بالأمان.
+          عند اختياركم لنا فإنكم تستثمرون في الكفاءة، والربحية، ومستقبل التنقل الحضري. كما يعالج برنامج الامتثال البديهي لدينا مشكلات الإنفاذ بسهولة، مما يمكن من إدارة التذاكر والمدفوعات بسلاسة.
+          معاً، دعونا نمهد الطريق لمدن أكثر ذكاءً واستدامة. انضموا إلى تقنية إتش كي بي في هذه الرحلة التحويلية نحو غد أكثر إشراقًا وابتكارًا.'
+          : 'In a fast-paced world, finding parking shouldn’t be a hassle. Introducing HKB Technology, your gateway to seamless, modern parking solutions.
+          HKB Technology leads the way in revolutionizing parking management. Utilizing IoT smart parking sensors and cloud solutions, where you can imagine a world where every spot is optimized, every access point is streamlined, and every revenue potential is maximized.
+          In Saudi Arabia, where time is invaluable and efficiency is crucial, HKB Technology is your trusted partner in transforming the urban landscape. Our end-to-end solutions, from open-space public parking to gated facilities, are tailored to meet diverse needs.
+          With a simple-to-use mobile application and multiple payment options, paying for parking has never been easier. Our cloud-based dashboard offers real-time insights, placing valuable parking data just a click away.
+          Our advanced parking guidance system reduces congestion, enhancing the experience for both drivers and pedestrians. For gated facilities, our secure access and revenue control systems ensure convenience without compromising security.
+          By choosing HKB Technology, you’re investing in efficiency, profitability, and the future of urban mobility. Our intuitive compliance software also addresses enforcement issues with ease, enabling seamless ticketing and payments.
+          Together, let’s pave the way for smarter, more sustainable cities. Join HKB Technology in this transformative journey toward a brighter, innovative tomorrow.
+'}}
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="forefront">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="forefront-border" data-aos="fade-up" data-aos-duration="1000">
+          <div class="forefront-box">
+            <div class="forefront-box-one">
+              <h3>{{"smartCityComp.title" | translate}}</h3>
+              <p>{{"smartCityComp.aboutTitle" | translate}}</p>
+            </div>
+
+            <div class="forefront-box-two">
+              <h3>{{"smartCityComp.initiative" | translate}}</h3>
+              <p>
+                {{"smartCityComp.aboutInitiative" | translate}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="smartCity" class="common-space layout-change">
+  <div class="container">
+    <div class="row">
+
+      <div class="d-xl-none d-lg-none d-sm-none col-12">
+        <img class="img-fluid" src="./assets/images/smart-city/3.png" />
+      </div>
+
+      <div class="col-xl-9">
+        <div class="smartCity-bg">
+          <div class="smartCity-bg--content" data-aos="fade-left" data-aos-duration="1500" id="smartCityslider">
+            <h2>{{translate.getDefaultLang() === 'ar' ? 'المدينة الذكية' : 'Smart City'}}</h2>
+            <p>
+               {{translate.getDefaultLang() == 'ar'
+                 ? 'تقف HKB TECH كمنارة للابتكار، حيث تقدم حلول المدن الذكية التي تعالج التحديات المتعددة الأوجه التي تواجهها البيئات الحضرية اليوم. يكمن التزامنا في الريادة المتطورة للحلول التي تعيد تعريف مناظر المدينة. من نشر البنية التحتية لإنترنت الأشياء (IoT) إلى تنفيذ تحليلات البيانات المتقدمة لاتخاذ قرارات مستنيرة، ترفع خبرتنا الحياة الحضرية إلى عالم من الاتصال السلس والكفاءة في الحكم.'
+                 : 'HKB TECH stands as a beacon of innovation, offering smart city solutions that address the multifaceted challenges faced by urban environments today. Our commitment lies in pioneering cutting-edge solutions that redefine cityscapes. From deploying Internet of Things (IoT) infrastructure to implementing advanced data analytics for informed decision-making, our expertise elevates urban living to a realm of seamless connectivity and efficient governance.'}}
+             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="counter" class="common-space">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="text-center mb-3">{{translate.getDefaultLang() === 'ar' ? 'مواقف السيارات الذكية بالأرقام' : 'Smart Parking in numbers'}}</h2>
+
+        <div class="counter-box">
+          <div class="counter-box--values text-center" data-aos="fade-up" data-aos-duration="2000">
+            <span class="counter-box--values_count" [countUp]="50" [options]="{ enableScrollSpy: true }">0
+            </span>
+            <span class="counter-box--values_count">%</span> <br />
+            <span>{{translate.getDefaultLang() === 'ar' ? 'زيادة في الإيرادات مع تطبيق التسعير المفاجئ' : 'Increase in revenue with applied surge pricing'}}</span>
+          </div>
+
+          <div class="counter-box--values text-center" data-aos="fade-up" data-aos-duration="2300">
+            <span class="counter-box--values_count" [countUp]="31" [options]="{ enableScrollSpy: true }">0
+            </span>
+            <span class="counter-box--values_count">%</span> <br />
+            <span>{{translate.getDefaultLang() === 'ar' ? 'تخفيض تكاليف الصيانة الشاملة' : 'Reduction in overall maintenance costs'}}</span>
+          </div>
+
+          <div class="counter-box--values text-center" data-aos="fade-up" data-aos-duration="2200">
+            <span class="counter-box--values_count" [countUp]="31" [options]="{ enableScrollSpy: true }">0
+            </span>
+            <span class="counter-box--values_count">%</span> <br />
+            <span>{{translate.getDefaultLang() === 'ar' ? 'انخفاض في رحلة السيارة' : 'Reduction in vehicle cruising'}} </span>
+          </div>
+
+          <div class="counter-box--values text-center" data-aos="fade-up" data-aos-duration="2300">
+            <span class="counter-box--values_count" [countUp]="28" [options]="{ enableScrollSpy: true }">0
+            </span>
+            <span class="counter-box--values_count">%</span> <br />
+            <span>{{translate.getDefaultLang() === 'ar' ? 'زيادة في الاستخدام (خلال أوقات الذروة)' : 'Increase in utilization (during peak times)'}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tabs" class="common-space" *ngIf="webContent">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="mb-4">{{translate.getDefaultLang() === 'ar' ? 'حالات الاستخدام التي نتفوق فيها' : 'Use Cases we excel'}} </h2>
+      </div>
+     <div class="col-lg-4 col-sm-5 col-xl-5 col-5">
+        <ul class="nav nav-pills nav-stacked">
+          <li class="nav-item" *ngFor="let item of webContent.tabs; let i = index" [class.active]="i === activeTab"
+            (click)="activateTab(i)">{{ item.title }}
+            <i class="fa-solid fa-caret-right"></i>
+          </li>
+        </ul>
+      </div>
+     <div class="col-lg-8 col-sm-7 col-xl-7 col-7">
+
+        <div class="tab-content">
+          <div class="tab-pane" [class.active]="i === activeTab" *ngFor="let item of webContent.tabs; let i = index">
+            <div *ngFor="let item of item.content">
+              <p>{{item.description}}</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <app-partners></app-partners> -->
+
+<!--<app-case-study [casestudyPageParent]="caseStudyPage"></app-case-study> -->
+<app-footer></app-footer>

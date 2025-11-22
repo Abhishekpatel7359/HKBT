@@ -1,0 +1,499 @@
+<app-header></app-header>
+
+<!-- video banner -->
+<section id="video-banner">
+  <video playsinline [muted]="'muted'" loop autoplay [src]="videoSource"></video>
+
+  <div class="video-content clear-fix">
+    <div class="container">
+      <p>{{ 'videoBanner.title' | translate }}</p>
+      <h3>
+        {{ 'videoBanner.subtitle' | translate }}
+      </h3>
+    </div>
+    <a class="move-forward" href="#about">
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+    </a>
+  </div>
+</section>
+
+<!-- about -->
+
+<!-- show Desktop -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="text-center mb-4">{{'aboutContent.title' | translate}}</h2>
+
+        <p class="mb-3 text-center"  data-aos-offset="100" data-aos-easing="ease-in-sine">
+          {{"aboutContent.subtitle" | translate}}
+        </p>
+
+        <p class="mb-5 text-center" data-aos-offset="150" data-aos-easing="ease-in-sine">
+          {{'aboutContent.sub-subtitle' | translate }}
+        </p>
+
+        <!-- show Desktop -->
+        <ul class="about-desktop"  data-aos-offset="180" data-aos-easing="ease-in-sine">
+          <li>
+            <img src="./assets/images/list/ai.png" /> {{ 'aboutContent.listItems.ai' | translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/smart-city.png" />{{ 'aboutContent.listItems.smartCities' | translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/internet-of-things.png" />{{ 'aboutContent.listItems.iot' | translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/robotic-process-automation.png" />{{ 'aboutContent.listItems.rpa' | translate
+            }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Conversational-AI.png" />{{ 'aboutContent.listItems.conversationalAi' |
+            translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/blockchain.png" />{{ 'aboutContent.listItems.blockchain' | translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Metaverse.png" />{{ 'aboutContent.listItems.metaverse' | translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Cloud-computing.png" />{{ 'aboutContent.listItems.cloudComputing' | translate
+            }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Predictive-analytics.png" />{{ 'aboutContent.listItems.predictiveAnalytics' |
+            translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Computer-vision.png" />{{ 'aboutContent.listItems.computerVision' | translate
+            }}
+          </li>
+          <li>
+            <img src="./assets/images/list/big-data.png" />{{ 'aboutContent.listItems.bigData' | translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Digital-Banking.png" />{{ 'aboutContent.listItems.digitalBanking' | translate
+            }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Biotech-healthtech.png" />{{ 'aboutContent.listItems.healthTech' | translate
+            }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Sustainability-net-zero.png" />{{ 'aboutContent.listItems.sustainability' |
+            translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Clean-tech.png" />{{ 'aboutContent.listItems.cleanTech' | translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/renewables.png" />{{ 'aboutContent.listItems.renewables' | translate }}
+          </li>
+          <li>
+            <img src="./assets/images/list/Cyber-security.png" />{{ 'aboutContent.listItems.cybersecurity' | translate
+            }}
+          </li>
+          <li><img src="./assets/images/list/Ed-tech.png" />{{'aboutContent.listItems.edTech' | translate }}</li>
+          <!-- <li><img src="./assets/images/list/Fit-tech.png" />{{'aboutContent.listItems.fitTech' | translate }}</li> -->
+        </ul>
+
+        <!-- show Mobile -->
+        <div class="pin-mobile about-mobile">
+          <div class="panel"  data-aos-offset="180" data-aos-easing="ease-in-sine">
+            <ul>
+              <li>
+                <img src="./assets/images/list/ai.png" />{{ 'showMobile.AI & Machine Learning' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/internet-of-things.png" />{{ 'showMobile.Internet of Things (IoT)' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/Conversational-AI.png" />{{ 'showMobile.Conversational AI/ DeepTech' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/Metaverse.png" />{{ 'showMobile.Metaverse, AR/VR' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/Predictive-analytics.png" />
+                {{ 'showMobile.Predictive Analytics' | translate }}
+              </li>
+            </ul>
+          </div>
+
+          <div class="panel"  data-aos-offset="200" data-aos-easing="ease-in-sine">
+            <ul>
+              <li>
+                <img src="./assets/images/list/big-data.png" />{{ 'showMobile.Big Data Analytics & Visualization' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/Biotech-healthtech.png" />{{ 'showMobile.BioTech / HealthTech' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/Clean-tech.png" />{{ 'showMobile.CleanTech / ClimateTech / GreenTech' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/Cyber-security.png" />{{ 'showMobile.Assurance/Cybersecurity' | translate }}
+              </li>
+              <li><img src="./assets/images/list/Fit-tech.png" />{{ 'showMobile.Fit Tech' | translate }}</li>
+            </ul>
+          </div>
+
+          <div class="panel"  data-aos-offset="220" data-aos-easing="ease-in-sine">
+            <ul>
+              <li>
+                <img src="./assets/images/list/smart-city.png" />{{ 'showMobile.Smart Cities' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/robotic-process-automation.png" />{{ 'showMobile.Robotic Process Automation (RPA)' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/blockchain.png" />{{ 'showMobile.Blockchain Development & Integration' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/Cloud-computing.png" />{{ 'showMobile.Cloud Computing' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/Computer-vision.png" />{{ 'showMobile.Computer Vision & Image Recognition' | translate }}
+              </li>
+            </ul>
+          </div>
+
+          <div class="panel"  data-aos-offset="240" data-aos-easing="ease-in-sine">
+            <ul>
+              <li>
+                <img src="./assets/images/list/Digital-Banking.png" />{{ 'showMobile.Digital Banking / FinTech' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/Sustainability-net-zero.png" />{{ 'showMobile.Sustainability / Net Zero' | translate }}
+              </li>
+              <li>
+                <img src="./assets/images/list/renewables.png" />{{ 'showMobile.Renewables / Wearables' | translate }}
+              </li>
+              <li><img src="./assets/images/list/Ed-tech.png" />{{ 'showMobile.EdTech' | translate }}</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="mt-5 text-center"  data-aos-offset="260" data-aos-easing="ease-in-sine">
+        {{ 'showMobile.para' | translate }}
+        </p>
+        <!--  -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- show mobile -->
+
+<!-- services -->
+<section id="services" class="common-space">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3 middle-align mb-3">
+        <div>
+          <h6 class="title">{{"ourServices.title" | translate}}</h6>
+          <p class="title-description">
+            {{"ourServices.subtitle" | translate}}
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-9">
+        <div class="carousel services">
+          <div class="carousel-cell" *ngFor="let item of services; let i=index" (click)="navigate(item, i, 'S')">
+            <div class="industries-image">
+              <img [src]="item.image" />
+              <h5>{{ item.title }}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- industries -->
+<section id="sector" *ngIf="industries">
+  <!-- content -->
+  <div class="carousel carousel-main ">
+    <div *ngFor="let item of industries[1]?.content; let i = index">
+      <div class="carousel-cell custom-box {{ 'class-' + i }}" [style.background-image]="'url(' + item.bgImage + ')'">
+        <div class="static-content">
+          <h6 class="color-white mb-3">{{ item.head }}</h6>
+          <p>
+            {{ item.staticContent }}
+          </p>
+        </div>
+
+        <div class="dynamic-content">
+          <h2>{{ item.title }}</h2>
+          <p *ngFor="let item of item.description">
+            {{ item.para }}
+          </p>
+
+          <div class="sector-types">
+            <div class="sector-types-catagory" *ngFor="let item of item.type">
+              <div>
+                <p>{{ item.type }}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 text-center">
+            <button class="btn news-button" (click)="navigate(item, i, 'I')">{{'aboutContent.listItems.Read More' | translate}}</button>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <div class="carousel carousel-nav sector-navigation" >
+    <div class="carousel-cell" *ngFor="let item of industries[0].navigation">
+      {{ item }}
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Our Product -->
+<section id="products" *ngIf="product">
+  <!-- content -->
+  <div class="carousel carousel-main ">
+    <div class="" *ngFor="let item of product[1]?.content;  let i = index">
+      <div *ngIf="item.id==0" class="carousel-cell  video  {{ 'class-' + i }}" [style.background-image]="'url(' + item.bgImage + ')'" style="">
+        <div class="back-blur">
+
+          <div class="vdo">
+            <video
+              playsinline
+              [muted]="isMuted"
+              loop
+              autoplay
+              [src]="videolink"
+              style="width: 100%; height: 100%;"
+              #videoPlayer>
+            </video>
+            <button class="mutebtn"
+              (click)="toggleMute(videoPlayer)"
+              style="">
+              <i class="fa" [class.fa-volume-mute]="isMuted" [class.fa-volume-up]="!isMuted" style="color: white;"></i>
+            </button>
+          </div>
+        <div class="static-product">
+          <h2 class="color-white mb-3">{{ item.title }}</h2>
+        
+          <!-- Show only the first paragraph initially -->
+          <p style="font-size: 0.8rem !important;; text-align: justify;">
+            {{ item.description?.[0]?.para }}
+          </p>
+        
+          <!-- Learn More button to trigger the popup -->
+         <div style="display: flex; gap: 10px; margin: 0 11px;">
+          <button (click)="presentModal(item)" class="btn news-button"   >
+            {{ translate.getDefaultLang() === 'ar' ? 'اقرأ المزيد' : 'Read More' }}
+          </button> 
+          <button (click)="pdfPoup()" class="btn news-button view-pdf-btn">
+            {{ translate.getDefaultLang() === 'ar' ? 'عرض قوات الدفاع الشعبي' : 'View PDF' }}
+          </button>
+            <!-- Download PDF button for mobile view -->
+            <a href="../../../assets/video/hkb_pdf.pdf" download="hkb pdf" style="text-decoration: none;">
+              <button class="btn news-button download-pdf-btn">
+              {{ translate.getDefaultLang() === 'ar' ? 'تحميل قوات الدفاع الشعبي' : 'Download PDF' }}
+            </button></a>
+         
+         </div>
+           
+        </div>
+        </div>
+
+
+        
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- NAVIGATION -->
+  <div class="carousel carousel-nav sector-navigation" style="display: flex;">
+    <div class="carousel-cell" style="text-transform:none;" *ngFor="let item of product[0].navigation">
+      {{ item }}
+    </div>
+  </div>
+  <!-- <div class="carousel carousel-nav sector-navigation">
+    <div class="carousel-cell" *ngFor="let item of industries[0].navigation">
+      {{ item }}
+    </div>
+  </div> -->
+  
+</section>
+
+
+
+<!-- our Product end -->
+ 
+
+<!-- team -->
+<!-- <app-team></app-team> -->
+
+
+
+<!-- partners -->
+<app-partners></app-partners>
+
+
+<!-- News -->
+<!-- <app-news></app-news> -->
+
+
+<!-- blog -->
+<app-blog></app-blog>
+
+
+<!-- <app-pdf-flipbook></app-pdf-flipbook> -->
+
+
+<!-- contact -->
+<section id="contact" class="common-space">
+  <div class="container">
+
+    
+    <div class="row">
+      <div class="col-xl-12">
+        <h6 class="title text-body">{{ 'contact.CONTACT US' | translate }}</h6>
+        <p class="title-description">{{ 'contact.Get in touch' | translate }}</p>
+      </div>
+
+      <div class="mb-5 p-3 bg-light rounded border">
+        <p class="mb-0" style="font-size: 1.1rem;">
+          <strong>Email:</strong> 
+          <a href="mailto:info@hkb.sa" style="text-decoration: none; color: #007bff;">
+            info@hkb.sa
+          </a>
+        </p>
+      </div>
+
+      <div class="col-xl-3">
+        <div 
+          (click)="activeInquiry(item)" 
+          [class]="contactForm.selectInquries === item.id ? 'activebox' : ''"
+          class="content-box" 
+          *ngFor="let item of contactDetails">
+          
+          <h4>{{ translate.getDefaultLang() === 'ar' ? item.headingAr : item.headingEn }}</h4>
+          <p>
+            {{ translate.getDefaultLang() === 'ar' ? item.descriptionAr : item.descriptionEn }}
+          </p>
+        </div>
+      </div>
+      
+      
+      <div class="col-xl-1">&nbsp;</div>
+
+      <div class="col-xl-8">
+
+        <form ngNoForm action="https://api.web3forms.com/submit" method="POST">
+          <!-- Web3Forms Access Key -->
+          <input type="hidden" name="access_key" value="2f062323-6acb-4906-8073-53a1901ee443" />
+        
+          <!-- Name Field -->
+          <div class="form-floating mt-5 mb-5">
+            <input name="username" type="text" required class="form-control custom-height" id="username" placeholder="Enter your name" />
+            <label class="cust-label" for="username">{{ 'contact.Name' | translate }} <span>*</span></label>
+          </div>
+        
+          <!-- Email Field -->
+          <div class="form-floating mb-5">
+            <input
+              name="email"
+              type="email"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              required
+              class="form-control custom-height"
+              id="email"
+              placeholder="Enter your email"
+            />
+            <label class="cust-label" for="email">{{ 'contact.Email address' | translate }} <span>*</span></label>
+          </div>
+        
+          <!-- Phone Number Field -->
+          <div class="form-floating mb-5">
+            <input
+              name="phoneNumber"
+              type="text"
+              pattern="[0-9]*"
+              maxlength="15"
+              minlength="8"
+              required
+              class="form-control custom-height"
+              placeholder="Enter your phone number"
+            />
+            <label class="cust-label" for="phoneNumber">{{ 'contact.Phone number' | translate }} <span>*</span></label>
+          </div>
+        
+          <!-- Inquiry Select Dropdown -->
+          <div class="form-floating mb-5">
+            <label for="selectInquries" class="custom-label">{{ 'contact.Reason for inquiry' | translate }} <span>*</span></label>
+            <select class="form-select custom-height" name="selectInquries" required>
+              <option value="Client Opportunities">Client Opportunities</option>
+              <option value="Partners Opportunities">Partners Opportunities</option>
+            </select>
+          </div>
+        
+          <!-- Message Textarea -->
+          <div class="form-floating mb-5">
+            <textarea
+              class="form-control custom-height"
+              placeholder="Enter your message"
+              rows="8"
+              required
+              id="comment"
+              name="message"
+            ></textarea>
+            <label class="cust-label" for="comment">{{ 'contact.Message' | translate }} <span>*</span></label>
+          </div>
+          <input type="hidden" name="redirect" value="https://hkb.sa/">
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary btn-sm button-1">
+            {{ 'contact.SEND MESSAGE' | translate }}
+          </button>
+        </form>                
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>
+
+<!-- popup -->
+<!-- <div [ngStyle]="{'display': PopupOpen==false? 'none' : 'block' }">
+  <div>
+    <app-pdf-flipbook></app-pdf-flipbook>
+
+  </div>
+</div> -->
+<div class="popup" [ngStyle]="{'display': PopupOpen==false? 'none' : 'block' }">
+  <!-- <button 
+  style="background-color: black; color: white; border: none; padding: 5px 10px; cursor: pointer; float: inline-end;" 
+  (click)="Popupclose()"
+>
+  X
+</button>  -->
+<div class="col-lg-12" style="padding: 0 98%;
+    float: inline-start;">
+  <i (click)="Popupclose()" class="fa-sharp fa-solid fa-circle-xmark float-left"></i>
+</div>
+
+<div style="padding: 30px 0px;">
+    <app-pdf-flipbook></app-pdf-flipbook>
+    <!-- hello -->
+  </div>
+</div>

@@ -1,0 +1,25 @@
+.bg-color{
+          background-color: #f2f2f2;
+          padding-bottom: 2rem;
+}
+
+.text-sm{
+          font-size: 0.8rem;
+}
+
+.bg-white{
+          background-color: #fff;
+          padding: 5rem 3rem;
+}
+
+@media only screen and (max-width: 767px) {
+          .bg-color{
+                    padding-top: 0 !important;
+          }
+
+          .bg-white{
+          padding: 2rem 1rem;
+
+          }
+
+}

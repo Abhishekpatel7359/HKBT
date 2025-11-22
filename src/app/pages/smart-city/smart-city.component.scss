@@ -1,0 +1,288 @@
+$base: 0.6rem;
+
+#video-banner {
+    position: relative;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+  
+    // .move-forward {
+    //   height: 100px;
+    //   width: 100px;
+    //   position: absolute;
+    //   right: 0;
+    //   top: 0;
+    // }
+  
+    video {
+      width: 100%;
+      height: 100vh;
+      max-height: 100vh;
+      object-fit: cover;
+    }
+  
+    .video-content {
+      position: absolute;
+      top: 50%;
+      bottom: 50%;
+      transform: translate(0, -50%);
+      width: 100%;
+      padding: 0 30px;
+      color: var(--white);
+      z-index: 1;
+
+      h1{
+        font-size: 3.5rem;
+        font-weight: 500;
+      }
+
+      h3{
+        font-weight: 300;
+      }
+  
+     
+    }
+
+    &::after{
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: #0006;
+      left: 0;
+      z-index: 0;
+    }
+  
+  }
+
+  #smartCity{
+    position: relative;
+
+    .smartCity-bg{
+      background-image: url('../../../assets/images/smart-city/1.png');
+      min-height: 600px;
+      background-size: cover;
+      background-position: top center;
+      display: flex;
+      align-items: center;
+    }
+
+    .smartCity-bg--content{
+      width: 50%;
+      position: relative;
+      right: 40%;
+      background-color: #fff;
+      border-radius: 6px;
+      padding: 2rem;
+      box-shadow: 0 0 32px 0 rgba(0,0,0,.19);
+    }
+
+  }
+  .mutebtn{
+    position: absolute;
+    /* top: 64px; */
+    /* bottom: 0; */
+    margin: 23% -35px;
+    z-index: 10;
+    /* padding: 5px 10px; */
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  // html[dir="rtl"] .smartCity-bg--content{
+  //   position: relative;
+  //   right: 95%; 
+  //  }
+
+  #urbanMobility{
+    background-image: url('../../../assets/images/smart-city/2.png');
+    background-size: cover;
+    background-position: 100% 47%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+
+  #forefront{
+
+    .forefront-border{
+      background: linear-gradient(0deg, #6d33cc 17%, #2277f8 100%);
+      padding: 5px;
+      margin-top: -5rem;
+    }
+
+    .forefront-box{
+      padding: 1.5rem;
+      background-color: #fff;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+    }
+
+  }
+
+  .layout-change{
+
+    .smartCity-bg{
+      background-image: url('../../../assets/images/smart-city/3.png') !important;
+    }
+
+    .smartCity-bg--content{
+
+      left: 85% !important;
+      // right: unset !important;
+    }
+
+  }
+
+
+  #counter{
+    background-image: url('../../../assets/images/smart-city/4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+
+    h2{
+      color: #fff;
+    }
+
+    .counter-box{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .counter-box--values{
+        span{
+          
+          font-weight: 500;
+          color: var(--white);
+        }
+
+        span.counter-box--values_count{
+          font-size: 2.5rem;
+        }
+
+      }
+
+      
+    }
+
+  }
+
+
+  
+#tabs{
+
+  background-color: var(--primary-color);
+  color: var(--white);
+
+  .nav-pills{
+    display: block !important;
+    border: 1px solid #fff;
+
+    .nav-item{
+      display: block;
+      cursor: pointer;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:not(:last-child){
+        border-bottom: 1px solid #fff;
+      }
+
+      i{
+    font-size: 2rem;  
+    visibility: hidden;     
+      }
+
+    }
+
+    .active{
+      i{
+        visibility: visible !important;     
+      }
+    }
+
+  }
+
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+  .common-space{
+    padding: 6rem 1rem; 
+  }
+
+  .smartCity-bg{
+    background-image: none !important;
+  }
+
+  .smartCity-bg--content{
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+  }
+
+  .forefront-box{
+    display: block !important;
+  }
+
+  .layout-change{
+    .smartCity-bg{
+    background-image: none !important;
+
+    }
+
+    .smartCity-bg--content{
+      margin-top: 1rem;
+      left: 0% !important;
+      right: unset !important;
+    }
+
+  }
+
+  .counter-box{
+    display: block !important;
+  }
+
+  #tabs{
+    padding: 5rem 1rem !important;
+
+  .nav-pills{
+
+    .nav-item{
+      font-size: 0.9rem;
+    }
+
+    i{
+      display: none;
+    }
+
+
+    p{
+      font-size: 0.8rem;
+    }
+
+  }
+
+  }
+
+  .tab-pane{
+    p{
+      font-size: 14px;
+    }
+  }
+
+  .mutebtn{
+    margin: 39% -35px;
+  }
+
+  
+
+}

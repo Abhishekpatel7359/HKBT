@@ -1,0 +1,23 @@
+<section id="blog" class="common-space">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <!-- <p class="sub-head">TEAM</p> -->
+          <p class="title-description">{{translate.getDefaultLang() === 'ar' ? 'دراسات الحالة' : 'Case Studies'}}</p>
+        </div>
+
+        <div class="col-lg-4 mt-3" *ngFor="let item of caseStudy; let i = index">
+          <img class="img-fluid news-image" [src]="item.image" />
+
+          <div class="news-section mb-5">
+            <h5 class="mt-4">{{translate.getDefaultLang() === 'ar' ?  item.titleAr :  item.title}}</h5>
+            <p *ngIf="item.description !== ''" class="mb-5">{{ item.description }}</p>
+
+            <button (click)="navigate(item)" class="btn news-button">{{translate.getDefaultLang() === 'ar' ? 'يتعلم أكثر' : 'Learn More'}}
+              
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

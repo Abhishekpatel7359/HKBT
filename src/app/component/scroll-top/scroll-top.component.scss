@@ -1,0 +1,31 @@
+.scroll-to-top {
+    position: fixed;
+    z-index: 10;
+    height: 30px;
+    width: 30px;
+    bottom: 15px;
+    right: 15px;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+    border-radius: 50%;
+    background: var(--gradient-1);
+    display: flex;
+    align-items: center;
+      justify-content: center;
+    padding: 1.5rem;
+    cursor: pointer;
+
+    i{
+        color: #fff;
+    }
+
+   }
+  
+  
+   .show-scrollTop {
+  
+    opacity: 1;
+  
+    transition: all .2s ease-in-out;
+  
+   }

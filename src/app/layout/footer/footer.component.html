@@ -1,0 +1,95 @@
+
+  <!-- subscribe -->
+  <section id="subscribe">
+    <div class="container">
+      <div class="row">
+  
+        <div class="col-lg-5">
+  
+        </div>
+  
+        <div class="col-lg-7 text-end">
+  
+          <form #subscribeform="ngForm">
+            <input [pattern]="emailValid" required  [(ngModel)]="email" type="email" name="email" id="email" [placeholder]="placeholderText"  autocomplete="off">
+            <button [disabled]="subscribeform.form.invalid" (click)="subscribe()" class="btn btn-primary btn-lg"  type="button">{{ translate.getDefaultLang() === 'ar' ? 'شترك معنا الآن' : 'Subscribe' }}</button>
+          </form>
+  
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+<footer class="footer-section" *ngIf="industries">
+          <div class="container">
+           
+              <div class="footer-content pt-5 pb-5">
+                  <div class="row">
+                   
+                      <div class="col-xl-2 col-lg-2 col-md-6 mb-3">
+                          <div class="footer-widget">
+                              <div class="footer-widget-heading">
+                                  <h3 [ngClass]="{'ar-lang': translate.getDefaultLang() === 'ar', 'en-lang': translate.getDefaultLang() !== 'ar'}">{{ translate.getDefaultLang() === 'ar' ? 'استكشف' : 'Explore' }}</h3>
+                              </div>
+                              <ul>
+                                  <li *ngFor="let item of jumpSection"><a [href]="'#'+ item.id">{{ translate.getDefaultLang() === 'ar' ? item.nameAr : item.nameEn }}</a></li>
+                              </ul>
+                          </div>
+                      </div>
+
+                      <div class="col-xl-5 col-lg-5 col-md-6 mb-3">
+                              <div class="footer-widget">
+                                  <div class="footer-widget-heading">
+                                      <h3 [ngClass]="{'ar-lang': translate.getDefaultLang() === 'ar', 'en-lang': translate.getDefaultLang() !== 'ar'}">{{ translate.getDefaultLang() === 'ar' ? 'الصناعات' : 'Industries' }}</h3>
+                                  </div>
+                                  <ul>
+                                      <li (click)="navigate(item, i, 'I')"  style="display: inline-block;" *ngFor="let item of industries[1].content; let i = index"><a>{{item.title}}</a></li>
+                                     
+                                  </ul>
+                              </div>
+                          </div>
+
+                          <div class="col-xl-5 col-lg-5 col-md-6 mb-3">
+                              <div class="footer-widget">
+                                  <div class="footer-widget-heading">
+                                      <h3 [ngClass]="{'ar-lang': translate.getDefaultLang() === 'ar', 'en-lang': translate.getDefaultLang() !== 'ar'}">{{ translate.getDefaultLang() === 'ar' ? 'الخدمات' : 'Services' }}</h3>
+                                  </div>
+                                  <ul>
+                                      <li (click)="navigate(item, i, 'S')"  *ngFor="let item of services; let i = index"><a>{{item.title}}</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+
+
+                  </div>
+              </div>
+          </div>
+          <div class="copyright-area">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xl-7 col-lg-7 mt-3">
+                          <div class="copyright-text">
+                              <p>{{ translate.getDefaultLang() === 'ar' ? '© 2024 HKB Tech جميع الحقوق محفوظة.' : '© 2024 HKB Tech All Rights Reserved.' }}
+                                <a [href]="siteUrl">{{ translate.getDefaultLang() === 'ar' ? 'اتش كيه بي تك' : 'HKB Tech' }}</a>  | <a [routerLink]="['/privacy']">{{ translate.getDefaultLang() === 'ar' ? 'سياسة الخصوصية' : 'Privacy Policy' }}
+                            </a> | <a [routerLink]="['/terms']">
+                                {{ translate.getDefaultLang() === 'ar' ? 'شروط الاستخدام' : 'Terms of Use' }}
+                            </a>
+                        </p>
+                          </div>
+                      </div>
+                      <div class="col-xl-5 col-lg-5 mt-3  d-lg-block text-lg-end  text-center">
+                          <div class="footer-menu footer-social-icon">
+                              <ul>
+                                  <li><a target="_blank" href="https://www.linkedin.com/company/hkb-hesham-bin-dayel-tech"><i class="fa-brands fa-linkedin-in linkedin-bg"></i></a></li>
+                                  <li><a target="_blank" href="https://twitter.com/HKB_Tech"><i class="fa-brands fa-x-twitter twitter-bg"></i></a></li>
+                                  <li><a  ><i class="fa-brands fa-youtube youtube-bg"></i></a></li>
+
+                                 
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
